@@ -6,9 +6,9 @@
 
  <p align="justify">The project itself was built minimally using <b>Nodejs</b> and <b>TypeScript</b>, with simple design from <b>Bootstrap</b></p>
 
-## Deployed link (New Feature: Profile Page): 
+## Deployed link: 
 <p align="center">
-<a href="x">x</a>||
+<a href="x">x</a> ||
 <a href="x">x</a>
 </p> 
 <br>
@@ -23,7 +23,7 @@ Otherwise:
 - run live server through the vscode extension `live server` to access the app through `localhost`
 - Note: At the moment, no deployment link is available. This documentation will be updated to reflect any new changes.
  **Please pardon the temporary inconvenience, thank you.** 
- 
+
 ### Contact Me:
 
 <img src="https://raw.githubusercontent.com/RevoU-FSSE-2/week-7-SherinOlivia/3dd7cdf0d5c9fc1828f0dfcac8ef2e9c057902be/assets/gmail-icon.svg" width="15px" background-color="none">[SOChronicle@gmail.com](mailto:SOChronicle@gmail.com) [Personal]
