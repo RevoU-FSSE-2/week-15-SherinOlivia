@@ -2,7 +2,8 @@ import {Request, Response, NextFunction} from 'express';
 import { Db, MongoClient } from 'mongodb';
 import 'dotenv/config'
 
-const uri = process.env.URI as string;
+const uri ="mongodb+srv://Sherin:4wxVNRuop2VBoLjL@cluster1.a1xaobt.mongodb.net/"
+
 
 const mongoMiddleware = async (req: any, res: Response, next : NextFunction) => {
     try {
