@@ -17,4 +17,13 @@ routerX.post('/', (req, res) => {
     res.json({ message: body });
 })
 
+routerX.put('/', (req, res) => {
+    let body = req.body;
+    res.json({ message: body });
+})
+
+routerX.delete('/', (req, res) => {
+    res.json({ "message": "Welp.. You don't really mean to delete me, now do you?" });
+});
+
 export default routerX

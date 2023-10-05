@@ -9,12 +9,21 @@ routerY.options('/', (req, res) => {
 });
 
 routerY.get('/', (req, res) => {
-  res.json({ "message": "Hii, This is Collaborator's CORS-enabled route" });
+  res.json({ "message": "Hii, This is the 2nd CORS-enabled route!" });
 });
 
 routerY.post('/', (req, res) => {
   let body = req.body;
   res.json({ message: body });
 })
+
+routerY.put('/', (req, res) => {
+  let body = req.body;
+  res.json({ message: body });
+})
+
+routerY.delete('/', (req, res) => {
+  res.json({ "message": "Welp.. You don't really mean to delete me too, now do you??" });
+});
 
 export default routerY
