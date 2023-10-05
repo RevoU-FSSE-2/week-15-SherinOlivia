@@ -8,6 +8,9 @@ const mongoMiddleware_1 = __importDefault(require("./middleware/mongoMiddleware"
 require("dotenv/config");
 const router_1 = require("./router");
 const cors_1 = __importDefault(require("cors"));
+// import helmet from 'helmet';
+// import escapeHtml from 'escape-html';
+// import morgan from 'morgan';
 const requestMiddleware_1 = __importDefault(require("./middleware/requestMiddleware"));
 const port = process.env.PORT;
 const app = (0, express_1.default)();
@@ -16,10 +19,10 @@ app.use(express_1.default.json());
 app.use(mongoMiddleware_1.default);
 app.use(requestMiddleware_1.default);
 const GlobalcorsOptions = {
-    origin: ['https://w15fe.roozone.site/', 'https://w15sh-fe.netlify.app/', 'http://localhost:5173', 'http://localhost:8000', 'http://localhost:5555'],
+    origin: ['https://w15fe.roozone.site', 'https://w15sh-fe.netlify.app', 'http://localhost:5173', 'http://localhost:8000', 'http://localhost:5555'],
 };
 const ClientXoptions = {
-    origin: ['https://w15fe.roozone.site/', 'https://w15sh-fe.netlify.app/', 'http://localhost:5173'],
+    origin: ['https://w15fe.roozone.site', 'https://w15sh-fe.netlify.app', 'http://localhost:5173'],
     methods: ['GET', 'POST'],
 };
 const ClientYoptions = {

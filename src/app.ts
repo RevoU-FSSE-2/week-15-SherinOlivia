@@ -3,9 +3,9 @@ import mongoMiddleware from './middleware/mongoMiddleware';
 import 'dotenv/config'
 import { router, routerX, routerY } from './router'
 import cors from 'cors';
-import helmet from 'helmet';
-import escapeHtml from 'escape-html';
-import morgan from 'morgan';
+// import helmet from 'helmet';
+// import escapeHtml from 'escape-html';
+// import morgan from 'morgan';
 import requestIdMiddleware from './middleware/requestMiddleware';
 
 const port = process.env.PORT;
@@ -17,11 +17,11 @@ app.use(mongoMiddleware)
 app.use(requestIdMiddleware);
 
 const GlobalcorsOptions = {
-    origin: ['https://w15fe.roozone.site/', 'https://w15sh-fe.netlify.app/', 'http://localhost:5173', 'http://localhost:8000', 'http://localhost:5555'],
+    origin: ['https://w15fe.roozone.site', 'https://w15sh-fe.netlify.app', 'http://localhost:5173', 'http://localhost:8000', 'http://localhost:5555'],
 }
 
 const ClientXoptions = {
-    origin: ['https://w15fe.roozone.site/', 'https://w15sh-fe.netlify.app/', 'http://localhost:5173'],
+    origin: ['https://w15fe.roozone.site', 'https://w15sh-fe.netlify.app', 'http://localhost:5173'],
     methods: ['GET', 'POST'],
 }
 const ClientYoptions = {
