@@ -39,9 +39,12 @@ app.use('/client-x', cors(ClientXoptions), routerX);
 app.use('/client-y', cors(ClientYoptions), routerY);
 
 // xss?
+app.get('/', (req, res) => {
 const htmlScript = '<script>alert("Caed mil");</script>';
 const escapeHtmlUse = escapeHtml(htmlScript);
+res.send(`<div>${escapeHtmlUse}</div>`);
 console.log(escapeHtmlUse)
+})
 
 app.listen(port, () => {
   console.log(`Server is running on port:${port}`)
