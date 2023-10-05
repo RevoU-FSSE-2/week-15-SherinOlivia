@@ -16,8 +16,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(mongoMiddleware)
 app.use(requestIdMiddleware);
-app.use(helmetConfig)
-app.use(morganConfig)
+helmetConfig(app)
+morganConfig(app)
 
 // cors config:
 const GlobalcorsOptions = {
