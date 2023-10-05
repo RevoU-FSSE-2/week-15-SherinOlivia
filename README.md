@@ -10,8 +10,9 @@
 <p align="center">
 Front End:
 <br>
-<a href="https://w15sh-fe.netlify.app/">w15sh-fe.netlify.app</a> ||
-<a href="http://w15fe.roozone.site/">w15fe.roozone.site</a>
+X: <a href="https://w15sh-fe.netlify.app/">w15sh-fe.netlify.app</a> 
+<br> ------------------------------------------ <br>
+Y: <a href="http://w15fe.roozone.site/">w15fe.roozone.site</a>
 </p> 
 <br>
 
