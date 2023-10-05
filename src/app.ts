@@ -32,14 +32,11 @@ const ClientYoptions = {
     origin: ['https://w15fe.roozone.site', 'http://localhost:5173'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
   }
-
-app.use('/client-x', cors(ClientXoptions));
-app.use('/client-y', cors(ClientYoptions));
-
-// router X & Y
+  
+// router
 app.use(router)
-app.use('/client-x', routerX);
-app.use('/client-y', routerY);
+app.use('/client-x', cors(ClientXoptions), routerX);
+app.use('/client-y', cors(ClientYoptions), routerY);
 
 // xss?
 const htmlScript = '<script>alert("Caed mil");</script>';
