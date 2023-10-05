@@ -8,8 +8,10 @@
 
 ## Deployed link: 
 <p align="center">
-<a href="x">x</a> ||
-<a href="x">x</a>
+Front End:
+<br>
+<a href="https://w15sh-fe.netlify.app/">w15sh-fe.netlify.app</a> ||
+<a href="http://w15fe.roozone.site/">w15fe.roozone.site</a>
 </p> 
 <br>
 
