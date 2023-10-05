@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const router = express_1.default.Router();
 // main app/page route
-router.get("/", function (req, res) {
+router.get("/", (req, res) => {
     res.status(200).json({
         success: true,
         message: "Hello, this is Sherin Olivia's Assignment for Week 15..~"
