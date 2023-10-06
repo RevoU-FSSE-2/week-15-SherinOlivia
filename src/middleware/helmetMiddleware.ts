@@ -1,7 +1,7 @@
 import helmet from "helmet";
 import { Express } from 'express';
 
-const helmetConfig = function(app: Express) {
+const helmetConfig = (app: Express) => {
     app.use(helmet())
 }
 
