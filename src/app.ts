@@ -5,8 +5,10 @@ import cors from 'cors';
 import escapeHtml from 'escape-html';
 import mongoMiddleware from './middleware/mongoMiddleware';
 import requestIdMiddleware from './middleware/requestMiddleware';
-import helmetConfig from './middleware/helmetMiddleware';
-import morganConfig from './middleware/morganMiddleware';
+// import helmetConfig from './middleware/helmetMiddleware';
+// import morganConfig from './middleware/morganMiddleware';
+import helmet from 'helmet';
+import morgan from 'morgan';
 
 const port = process.env.PORT;
 const app = express()
@@ -16,8 +18,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(mongoMiddleware)
 app.use(requestIdMiddleware);
-helmetConfig(app)
-morganConfig(app)
+app.use(helmet())
+app.use(morgan('combined'));
 
 // cors config:
 const GlobalcorsOptions = {
