@@ -18,7 +18,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(mongoMiddleware)
 app.use(requestIdMiddleware);
-app.use(helmet())
+app.use(helmet({
+  frameguard: { action: 'deny' }
+}));
 app.use(morgan('combined'));
 
 // cors config:
@@ -34,8 +36,6 @@ const ClientYoptions = {
     origin: ['https://w15fe.roozone.site','http://localhost:5173'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
   }
-
-// app.use(cors(GlobalcorsOptions));
 
 // router
 app.use(router)
