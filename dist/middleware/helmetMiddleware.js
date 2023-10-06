@@ -1,10 +1,6 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const helmet_1 = __importDefault(require("helmet"));
-const helmetConfig = function (app) {
-    app.use((0, helmet_1.default)());
-};
-exports.default = helmetConfig;
+// import helmet from "helmet";
+// import { Express } from 'express';
+// export default module.exports = (app: Express) => {
+//     app.use(helmet());
+//   }
