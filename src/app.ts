@@ -21,15 +21,15 @@ morganConfig(app)
 
 // cors config:
 const GlobalcorsOptions = {
-    origin: ['https://w15fe.roozone.site', 'https://w15sh-fe.netlify.app'],
+    origin: ['https://w15fe.roozone.site', 'https://w15sh-fe.netlify.app', 'http://localhost:5173'],
 }
 
 const ClientXoptions = {
-    origin: 'https://w15sh-fe.netlify.app',
+    origin: ['https://w15sh-fe.netlify.app','http://localhost:5173'],
     methods: ['GET', 'POST'],
 }
 const ClientYoptions = {
-    origin: 'https://w15fe.roozone.site',
+    origin: ['https://w15fe.roozone.site','http://localhost:5173'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
   }
 
