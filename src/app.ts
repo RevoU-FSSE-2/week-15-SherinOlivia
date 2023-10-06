@@ -25,15 +25,15 @@ app.use(morgan('combined'));
 
 // cors config:
 const GlobalcorsOptions = {
-    origin: ['https://w15fe.roozone.site', 'https://w15sh-fe.netlify.app', 'http://localhost:5173'],
+    origin: ['https://w15-fe.roozone.site', 'https://w15fe.vercel.app', 'http://localhost:5173'],
 }
 
 const ClientXoptions = {
-    origin: ['https://w15sh-fe.netlify.app','http://localhost:5173'],
+    origin: ['https://w15fe.vercel.app','http://localhost:5173'],
     methods: ['GET', 'POST'],
 }
 const ClientYoptions = {
-    origin: ['https://w15fe.roozone.site','http://localhost:5173'],
+    origin: ['https://w15-fe.roozone.site','http://localhost:5173'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
   }
 
