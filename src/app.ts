@@ -33,6 +33,8 @@ const ClientYoptions = {
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
   }
 
+app.use(cors(GlobalcorsOptions));
+
 // router
 app.use(router)
 app.use('/client-x', cors(ClientXoptions), routerX);
