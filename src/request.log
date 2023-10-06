@@ -1,0 +1,37 @@
+Client X (origin: https://w15sh-fe.netlify.app)
+1. GET:
+::ffff:192.168.0.3 - - [06/Oct/2023:00:59:42 +0000] "OPTIONS /client-x HTTP/1.1" 204 0 "https://w15sh-fe.netlify.app/"; "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 Edg/117.0.2045.43"
+
+::ffff:192.168.0.4 - - [06/Oct/2023:00:59:44 +0000] "GET /client-x HTTP/1.1" 200 53 "https://w15sh-fe.netlify.app/"; "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 Edg/117.0.2045.43"
+
+2. POST: 
+::ffff:192.168.0.4 - - [06/Oct/2023:01:02:59 +0000] "OPTIONS /client-x HTTP/1.1" 204 0 "https://w15sh-fe.netlify.app/"; "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 Edg/117.0.2045.43"
+
+::ffff:192.168.0.2 - - [06/Oct/2023:01:03:00 +0000] "POST /client-x HTTP/1.1" 200 37 "https://w15sh-fe.netlify.app/"; "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 Edg/117.0.2045.43"
+
+3. PUT: (didn't reach the Method)
+::ffff:192.168.0.2 - - [06/Oct/2023:01:01:12 +0000] "OPTIONS /client-x HTTP/1.1" 204 0 "https://w15sh-fe.netlify.app/"; "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 Edg/117.0.2045.43"
+
+4. DELETE: (didn't reach the Method)
+::ffff:192.168.0.4 - - [06/Oct/2023:01:01:15 +0000] "OPTIONS /client-x HTTP/1.1" 204 0 "https://w15sh-fe.netlify.app/"; "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 Edg/117.0.2045.43"
+
+Client Y (origin: https://w15fe.roozone.site)
+1. GET:
+::ffff:192.168.0.2 - - [06/Oct/2023:01:04:22 +0000] "OPTIONS /client-y HTTP/1.1" 204 0 "https://w15fe.roozone.site/"; "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 Edg/117.0.2045.43"
+
+::ffff:192.168.0.4 - - [06/Oct/2023:01:04:23 +0000] "GET /client-y HTTP/1.1" 200 54 "https://w15fe.roozone.site/"; "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 Edg/117.0.2045.43"
+
+2. POST: 
+::ffff:192.168.0.4 - - [06/Oct/2023:01:05:19 +0000] "OPTIONS /client-x HTTP/1.1" 204 0 "https://w15sh-fe.netlify.app/"; "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 Edg/117.0.2045.43"
+
+::ffff:192.168.0.4 - - [06/Oct/2023:01:05:20 +0000] "POST /client-x HTTP/1.1" 200 37 "https://w15sh-fe.netlify.app/"; "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 Edg/117.0.2045.43"
+
+3. PUT: 
+::ffff:192.168.0.4 - - [06/Oct/2023:01:06:01 +0000] "OPTIONS /client-y HTTP/1.1" 204 0 "https://w15fe.roozone.site/"; "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 Edg/117.0.2045.43"
+
+::ffff:192.168.0.4 - - [06/Oct/2023:01:06:02 +0000] "PUT /client-y HTTP/1.1" 200 37 "https://w15fe.roozone.site/"; "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 Edg/117.0.2045.43"
+
+4. DELETE: 
+::ffff:192.168.0.2 - - [06/Oct/2023:01:06:33 +0000] "OPTIONS /client-y HTTP/1.1" 204 0 "https://w15fe.roozone.site/"; "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 Edg/117.0.2045.43"
+
+::ffff:192.168.0.2 - - [06/Oct/2023:01:06:34 +0000] "DELETE /client-y HTTP/1.1" 200 73 "https://w15fe.roozone.site/"; "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 Edg/117.0.2045.43"
