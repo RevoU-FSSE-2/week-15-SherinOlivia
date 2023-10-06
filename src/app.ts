@@ -35,7 +35,7 @@ const ClientYoptions = {
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
   }
 
-app.use(cors(GlobalcorsOptions));
+// app.use(cors(GlobalcorsOptions));
 
 // router
 app.use(router)

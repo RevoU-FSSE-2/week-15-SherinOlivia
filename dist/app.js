@@ -35,7 +35,7 @@ const ClientYoptions = {
     origin: ['https://w15fe.roozone.site', 'http://localhost:5173'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 };
-app.use((0, cors_1.default)(GlobalcorsOptions));
+// app.use(cors(GlobalcorsOptions));
 // router
 app.use(router_1.router);
 app.use('/client-x', (0, cors_1.default)(ClientXoptions), router_1.routerX);
